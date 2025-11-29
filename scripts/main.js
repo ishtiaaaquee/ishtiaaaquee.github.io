@@ -396,3 +396,4 @@ scrollToTopBtn.addEventListener('mouseleave', () => {
 });
 
 console.log('Professional cybersecurity portfolio loaded with interactive animations!');
+
