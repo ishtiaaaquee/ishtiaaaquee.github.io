@@ -1,0 +1,40 @@
+/**
+ * Variables - CSS Custom Properties
+ * All color, spacing, typography, and design token definitions
+ */
+
+:root {
+    /* Color Palette - Cybersecurity Red Team Theme */
+    --primary-color: #0d0d0d;
+    --secondary-color: #1a1a1a;
+    --accent-color: #ff0000;
+    --accent-secondary: #dc143c;
+    --accent-bright: #ff3333;
+    --dark-bg: #000000;
+    --light-bg: #0f0f0f;
+    --white: #ffffff;
+    --text-dark: #0d0d0d;
+    --text-light: #999999;
+    --text-accent: #e0e0e0;
+    --border-color: #333333;
+    --success-color: #ff0000;
+    --danger-color: #ff0000;
+    --neon-red: #ff0000;
+    --neon-crimson: #dc143c;
+    --neon-dark-red: #8b0000;
+    --blood-red: #cc0000;
+    --dark-gray: #1a1a1a;
+    --glass-bg: rgba(255, 0, 0, 0.05);
+    --glass-border: rgba(255, 0, 0, 0.1);
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    
+    /* Typography */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Roboto Mono', monospace;
+}

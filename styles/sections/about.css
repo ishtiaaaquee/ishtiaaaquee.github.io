@@ -1,0 +1,43 @@
+/**
+ * About Section Styles
+ */
+
+.about {
+    background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.about-card {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(13, 13, 13, 0.4));
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+.about-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-card h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-xs);
+}
+
+.about-card p {
+    color: var(--text-accent);
+    line-height: 1.6;
+}

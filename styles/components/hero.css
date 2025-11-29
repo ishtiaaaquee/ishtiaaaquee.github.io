@@ -1,0 +1,112 @@
+/**
+ * Hero Section Styles
+ */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #000000 0%, #1a0000 50%, #0d0d0d 100%);
+    color: var(--text-accent);
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 3px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-bright));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: glowPulse 2s ease-in-out infinite;
+    font-family: var(--font-secondary);
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.8));
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--accent-color);
+    font-family: var(--font-secondary);
+}
+
+.hero-description {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    transition: transform 0.1s ease-out;
+}
+
+.profile-image {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid var(--accent-color);
+    box-shadow: 
+        0 0 30px rgba(255, 0, 0, 0.6),
+        0 10px 40px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 10;
+    background: white;
+    padding: 2px;
+    transition: all 0.3s ease;
+    transform: scale(0.85);
+}
+
+.profile-image:hover {
+    box-shadow: 
+        0 0 50px rgba(255, 0, 0, 0.8),
+        0 15px 50px rgba(255, 0, 0, 0.4);
+    transform: scale(0.87);
+}

@@ -1,0 +1,28 @@
+/**
+ * Main Stylesheet - Imports all modular CSS files
+ * Object-Oriented CSS Architecture
+ */
+
+/* 1. Variables and Base Styles */
+@import url('variables.css');
+@import url('base.css');
+
+/* 2. Component Styles */
+@import url('components/navbar.css');
+@import url('components/hero.css');
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+
+/* 3. Section Styles */
+@import url('sections/about.css');
+@import url('sections/experience.css');
+@import url('sections/education.css');
+@import url('sections/skills.css');
+@import url('sections/certifications.css');
+@import url('sections/leadership.css');
+@import url('sections/contact.css');
+
+/* 4. Utilities and Responsive */
+@import url('utilities.css');
+@import url('responsive.css');
